@@ -17,6 +17,6 @@ def submitdata(request):
     c = request.POST.get('email')
     
     object = information(firstname = a,lastname = b,email = c)
-    object.save
+    object.save()
     
     return HttpResponse("Data submit succesfully")
